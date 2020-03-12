@@ -1,0 +1,21 @@
+#1.Create a local repository and add and commit some files
+mkdir Exercise2
+cd Exercise2
+touch lzw.txt
+git init
+git add .
+git commit -m "initial commit"
+
+#2.Create a remote repository and push your code from the local repo to the remote
+Head over to https://github.com/new and create a repository
+git config --global user.name "lzw-6116"
+git config --global user.email "1019733847@qq.com"
+git remote add origin https://github.com/lzw-6116/first_repo.git
+git push -u origin master
+
+#3.Fork the repo https://github.com/rithmschool/git_practice - clone it and submit a pull request
+https://github.com/lzw-6116/git_practice
+
+#4.Create a new branch locally and push it to GitHub
+git branch -b dev
+git push origin HEAD -u
